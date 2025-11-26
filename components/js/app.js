@@ -33,3 +33,11 @@ function showAboutNav(){
     document.getElementById("root").innerHTML = data;
     });
 }
+
+function showloginNav(){
+    fetch("components/login/login.html")
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById("root").innerHTML = data;
+    });
+}
